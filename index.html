@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Joe P. Samples's Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/be6d9fdd26.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Arbutus Slab' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav class="menu-bar">
+            <div class="container">
+              <ul class="menu">
+                <li>
+                  <a href="#" onclick="showSection('profile')">Home</a>
+                </li>
+                <!--Sections dropdown -->
+                <li class="submenu">
+                  <a href="#">Portfolio</a>
+                  <ul class="dropdown">
+                    <li><a href="#" onclick="showSection('research')">Research</a></li>
+                    <li><a href="#" onclick="showSection('education')">Education</a></li>
+                    <li><a href="#" onclick="showSection('work')">Experience</a></li>
+                    <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+                    <li><a href="#" onclick="showSection('publications')">Publications</a></li>
+                    <li><a href="#" onclick="showSection('skills')">Skills</a></li>
+                    <li><a href="#" onclick="showSection('teaching')">Teaching</a></li>
+                    <li><a href="#" onclick="showSection('awards')">Awards</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>          
+    </header>
+
+    <main>
+        <section id="profile">
+            <div class="left-section">
+                <div class="profile-pic">
+                    <img src="profile/5.svg" alt="Joe P. Samples" style="width: 250px; height: auto; max-width: 100%; border-radius: 50%;">
+                </div>
+                <div class="contacts">
+                    <a href="mailto:joe.samples@utsa.edu" aria-label="Email"><i class="fa-solid fa-envelope fa-lg"></i></a>
+                    <a href="tel:+12105552225" aria-label="Phone"><i class="fa-solid fa-phone fa-lg"></i></a>
+                </div>
+            </div>
+            <div class="right-section">
+              <div class="intro-text">
+                <p>H<span id="typing-text"></span></p>
+                <h1>Joe P. Samples</h1>
+              </div>
+              <div class="profile-card">
+                <p class="summary">
+                    Joe P. Samples is an accomplished researcher with a strong background in neurobiology and cell biology, specializing in learning, memory, and cell adhesion. With extensive experience as a research assistant and teaching assistant, Joe has contributed to significant research projects and publications. He has been recognized with multiple awards and fellowships, demonstrating his commitment to advancing scientific knowledge.
+                </p>
+              </div>
+            </div>
+        </section>
+
+        <section id="research" class="hidden">
+            <h2>Research Interests</h2>
+            <div id="research-interests-container" class="research-grid">
+                <div class="research-card">
+                    <h3 class="research-field">Neurobiology</h3>
+                    <p class="research-description">Learning and memory, long term potentiation</p>
+                </div>
+                <div class="research-card">
+                    <h3 class="research-field">Respiratory Biology</h3>
+                    <p class="research-description"></p>
+                </div>
+                <div class="research-card">
+                    <h3 class="research-field">Physiology of Vision</h3>
+                    <p class="research-description"></p>
+                </div>
+                <div class="research-card">
+                    <h3 class="research-field">Cell and Molecular Biology</h3>
+                    <p class="research-description">Cell adhesion and cancer biology</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="hidden">
+            <h2 class="section-title">Education</h2>
+            <div class="content-container" id="education-container">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">1996</div>
+                        <div class="timeline-content">
+                            <h3>Postdoc. in Cell & Structural Biology</h3>
+                            <span class="school">University of Texas Health Science Center at San Antonio</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">1995</div>
+                        <div class="timeline-content">
+                            <h3>Ph.D. in Neuroscience Interdisciplinary Training Program</h3>
+                            <span class="school">Tulane University, New Orleans, LA</span>
+                            <p class="thesis">
+                                <strong>Thesis:</strong> Induced Regeneration and Gene Expression in the Chick Limb Bud – Examined developmental phenomena and stage-related barriers to regeneration in higher vertebrates, focusing on Msx-1 and HoxD homeobox expression.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">1992</div>
+                        <div class="timeline-content">
+                            <h3>M.S. in Biomedical Engineering</h3>
+                            <span class="school">Tulane University, New Orleans, LA</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">1986</div>
+                        <div class="timeline-content">
+                            <h3>B.S. in Psychobiology</h3>
+                            <span class="school">University of Texas at San Antonio</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="hidden">
+            <h2>Work Experience</h2>
+            <div class="content-container" id="experience-container">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2001-2003</div>
+                        <div class="timeline-content">
+                            <h3 class="position">Undergraduate Research Assistant</h3>
+                            <span class="institution">University of Texas at San Antonio</span>
+                            <div class="description-container">
+                                <ul class="description-list">
+                                    <li>MBRS-RISE Research Training Program</li>
+                                    <li>Center for Research and Training in the Sciences</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">1999-2001</div>
+                        <div class="timeline-content">
+                            <h3 class="position">Teaching Assistant, Introductory Biology Laboratory</h3>
+                            <span class="institution">University of Texas at San Antonio</span>
+                            <div class="description-container">
+                                <ul class="description-list">
+                                    <li>Department of Biology</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">1997-1999</div>
+                        <div class="timeline-content">
+                            <h3 class="position">Undergraduate Research Assistant</h3>
+                            <span class="institution">University of Texas at San Antonio</span>
+                            <div class="description-container">
+                                <ul class="description-list">
+                                    <li>MARC U*STAR Honors Research Training Program</li>
+                                    <li>Center for Research and Training in the Sciences</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2000</div>
+                        <div class="timeline-content">
+                            <h3 class="position">Research Assistant</h3>
+                            <span class="institution">University of California, Los Angeles</span>
+                            <div class="description-container">
+                                <ul class="description-list">
+                                    <li>UCLA Summer AWU-DOE Summer Research Program</li>
+                                    <li>Department of Neurobiology</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">1994-1995</div>
+                        <div class="timeline-content">
+                            <h3 class="position">Research Assistant</h3>
+                            <span class="institution">University of Texas Health Science Center at San Antonio</span>
+                            <div class="description-container">
+                                <ul class="description-list">
+                                    <li>Department of Cell and Structural Biology</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">1992-1993</div>
+                        <div class="timeline-content">
+                            <h3 class="position">Quality Assurance Analyst</h3>
+                            <span class="institution">DGMMM Laboratories</span>
+                            <div class="description-container">
+                                <ul class="description-list">
+                                    <li>Quality Assurance Department</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="hidden">
+            <h2>Technical Skills</h2>
+            <div id="technical-skills-container" class="skills-grid">
+                <div class="skill-item">
+                    <span>RT-PCR</span>
+                </div>
+                <div class="skill-item">
+                    <span>Confocal Microscopy</span>
+                </div>
+                <div class="skill-item">
+                    <span>Hippocampal Field Potential Recording</span>
+                </div>
+                <div class="skill-item">
+                    <span>Genomic and plasmid DNA, and RNA isolation and purification</span>
+                </div>
+                <div class="skill-item">
+                    <span>Western Blotting</span>
+                </div>
+                <div class="skill-item">
+                    <span>Morris Maze – Behavioral testing</span>
+                </div>
+                <div class="skill-item">
+                    <span>Tissue Culture – Primary and Cell Line</span>
+                </div>
+                <div class="skill-item">
+                    <span>Agarose and acrylamide gel electrophoresis</span>
+                </div>
+                <div class="skill-item">
+                    <span>RNase protection assays</span>
+                </div>
+            </div>
+        </section>
+          
+        <section id="publications" class="hidden">
+            <h2>Publications</h2>
+            <div class="publications-container" id="publications-container">
+                <div class="publication-card">
+                    <h3 class="publication-title">Extraction of RNA from single frozen sections</h3>
+                    <div class="publication-meta">
+                        <span class="publication-journal">J Pathol.</span>
+                        <span class="publication-year">1998</span>
+                    </div>
+                    <p class="publication-authors">Taylor GP, Troyer DA, Giambernardi TA, Klebe RJ</p>
+                </div>
+                
+                <div class="publication-card">
+                    <h3 class="publication-title">FGF-2 induces regeneration of the Chick limb bud</h3>
+                    <div class="publication-meta">
+                        <span class="publication-journal">Dev. Biol</span>
+                        <span class="publication-year">1994</span>
+                    </div>
+                    <p class="publication-authors">Taylor GP, Anderson RA, Reginelli AD, Muneoka K</p>
+                </div>
+
+                <div class="publication-card">
+                    <h3 class="publication-title">Conversion of anterior limb bud cells to ZPA signaling cells in vitro and in vivo</h3>
+                    <div class="publication-meta">
+                        <span class="publication-journal">Dev. Biol.</span>
+                        <span class="publication-year">1994</span>
+                    </div>
+                    <p class="publication-authors">Anderson R, Landry M, Reginelli A, Taylor G, Achkar C, Gudas L, Muneoka K</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="teaching" class="hidden">
+            <h2 class="section-title">Teaching Experience</h2>
+            <div class="content-container" id="teaching-container">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <h3 class="teaching-role">Instructor</h3>
+                            <span class="teaching-institution">University of Texas at San Antonio</span>
+                            <div class="courses-container">
+                                <h4>Courses:</h4>
+                                <ul>
+                                    <li>Professional Skills Development for Graduate Students</li>
+                                    <li>Introductory Genetics lecture</li>
+                                    <li>Advanced Neurobiology Laboratory</li>
+                                    <li>Neurobiology Laboratory</li>
+                                    <li>General Biology Laboratory</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="awards" class="hidden">
+            <h2 class="section-title">Honors & Awards</h2>
+            <div class="content-container" id="awards-container">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2008</div>
+                        <div class="timeline-content">
+                            <h3 class="award-name">Graduated Magna Cum Laude, UTSA</h3>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2008</div>
+                        <div class="timeline-content">
+                            <h3 class="award-name">Gold Key National Honor Society</h3>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2006-2008</div>
+                        <div class="timeline-content">
+                            <h3 class="award-name">Minority Access to Research Careers - Undergraduate Student Training for Academic Research (MARC-U*STAR) Trainee</h3>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2006, 2007</div>
+                        <div class="timeline-content">
+                            <h3 class="award-name">Annual Biomedical Research Conference for Minority Students Travel Award</h3>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2006</div>
+                        <div class="timeline-content">
+                            <h3 class="award-name">Winner, Society for the Advancement of Chicanos and Native Americans in Science, Graduate Poster Competition</h3>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2005-2006</div>
+                        <div class="timeline-content">
+                            <h3 class="award-name">Minority Biomedical Research Support - Research Initiative for Scientific Enhancement (MBRS-RISE) Trainee</h3>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2005</div>
+                        <div class="timeline-content">
+                            <h3 class="award-name">University of California Berkeley Summer Research Fellowship</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <button class="theme-toggle" onclick="toggleTheme()"><i class="fa-solid fa-moon fa-lg"></i></button>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            body.classList.toggle('dark');
+
+            const button = document.querySelector('.theme-toggle');
+            button.innerHTML = body.classList.contains('dark')
+                ? '<i class="fa-solid fa-sun fa-lg"></i>'
+                : '<i class="fa-solid fa-moon fa-lg"></i>';
+        }
+
+        function showSection(id) {
+            document.querySelectorAll('main section').forEach(s => s.classList.add('hidden'));
+            document.getElementById(id).classList.remove('hidden');
+        }
+
+        // Default section on page load
+        showSection('profile');
+        const text = "ello, I'm";
+        const typingText = document.getElementById('typing-text');
+        let index = 0;
+        let isDeleting = false;
+
+        function typeEffect() {
+            if (isDeleting) {
+                typingText.innerText = text.substring(0, index--);
+            } else {
+                typingText.innerText = text.substring(0, index++);
+            }
+            let speed = isDeleting ? 75 : 150;
+            if (!isDeleting && index === text.length + 1) {
+                speed = 1200; // Pause at full text before deleting
+                isDeleting = true;
+            } else if (isDeleting && index === 0) {
+                isDeleting = false;
+                speed = 500; // Pause before typing again
+            }
+            setTimeout(typeEffect, speed);
+        }
+        typeEffect();
+
+        document.querySelectorAll('.timeline-item').forEach(item => {
+            item.addEventListener('mouseenter', function () {
+                document.querySelectorAll('.timeline-item.active').forEach(activeItem => {
+                    if (activeItem !== this) {
+                        activeItem.classList.remove('active');
+                    }
+                });
+                this.classList.add('active');
+            });
+
+            item.addEventListener('click', function () {
+                document.querySelectorAll('.timeline-item').forEach(i => i.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // Project section
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.project-card');
+        const totalSlides = slides.length;
+
+        function updateCarousel() {
+            const container = document.querySelector('.projects-container');
+            container.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        function nextSlide() {
+            if (currentSlide < totalSlides - 1) {
+            currentSlide++;
+            updateCarousel();
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 0) {
+            currentSlide--;
+            updateCarousel();
+            }
+        }
+        document.addEventListener('DOMContentLoaded', updateCarousel);
+    </script>
+</body>
+</html>
